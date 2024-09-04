@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciamento de Notas e Frequência</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <h1>Gerenciamento de Notas e Frequência</h1>
+
+    <!-- Formulário para inserir os dados do aluno -->
+    <form id="formulario">
+        <div class="input-group">
+            <input type="text" id="nome" placeholder="Nome do Aluno" required>
+        </div>
+        <div class="input-group">
+            <input type="number" id="nota1" placeholder="Nota 1 (0-10)" min="0" max="10" required>
+            <input type="number" id="nota2" placeholder="Nota 2 (0-10)" min="0" max="10" required>
+            <input type="number" id="nota3" placeholder="Nota 3 (0-10)" min="0" max="10" required>
+            <input type="number" id="nota4" placeholder="Nota 4 (0-10)" min="0" max="10" required>
+            <input type="number" id="nota5" placeholder="Nota 5 (0-10)" min="0" max="10" required>
+        </div>
+        <div class="input-group">
+            <input type="number" id="frequencia" placeholder="Frequência (%)" min="0" max="100" required>
+        </div>
+        <button type="button" class="button" onclick="adicionarAluno()">Adicionar Aluno</button>
+    </form>
+
+    <!-- Exibição dos resultados -->
+    <div class="output" id="resultado"></div>
+
+    <!-- Script JavaScript para processamento -->
+    <script src="js/script.js"></script>
+</body>
+</html>
